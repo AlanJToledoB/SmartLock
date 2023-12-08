@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>SmartLock</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 bg-body-tertiary rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">SmartLock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Que es</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hardware</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="fondo-container">
+            <div class="background-image">
+                <div class="content">
+                    <div class="text-container">
+                        <h1 class="site-title">Bienvenido, esto es</h1>
+                        <h2 class="site-subtitle">SmartLock</h2>
+                        <p class="site-parrafo">Tu mejor elección en el área de la <label
+                                class="Palabras-claves">seguridad </label> en tu hogar, siempre con el mejor compromiso
+                            y <label class="Palabras-claves">confiabilidad</label></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='about'>
+        <div class='detalle-about'></div>
+        <h3 class='about-is'>¿Qué es?</h3>
+        <p class='text-parraf'>SmartLock es un proyecto de seguridad del hogar en el que quisimos desempeñar los
+            conceptos más usados de la informática.</p>
+
+        <!-- Agregar el elemento de video -->
+        <video width="520" height="300" controls>
+            <source src='assets/presentacion.mp4' type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <div class='imagenes-about'>
+            <div>
+                <i class="bi bi-bug-fill"></i>
+                <h4>Hardware</h4>
+                <p></p>
+            </div>
+            <div>
+                <i class="bi bi-code-slash"></i>
+                <h4>Software</h4>
+            </div>
+            <div>
+                <i class="bi bi-robot"></i>
+                <h4>Lógica</h4>
+            </div>
+        </div>
+        <p class='text-parraf'>Enfoquémonos más en los conceptos que usamos para este proyecto.</p>
+    </div>
+
+
+    <div class='about'>
+        <div class='detalle-about'></div>
+        <h3 class='about-is mt-n1'>
+            Hardware <i class='bi bi-bug-fill'></i>
+        </h3>
+        <p class='text-parraf'>
+            En esta sección mostraremos todos los elementos más importantes que
+            usamos para la creación del <label class='Palabras-claves'>prototipo. </label>
+        </p>
+
+        <div id='carouselExampleInterval' class='carousel slide' data-ride='carousel'>
+            <div class='carousel-inner'>
+                <!-- Item 1 -->
+                <div class='carousel-item active' data-interval='10000'>
+                    <div class='d-flex flex-column align-items-center'>
+                        <img src='assets/imgSlider/esp8266.png' class='d-block w-50 mx-auto' alt='Esp8266' />
+                        <h4 class='mt-2'>Esp8266</h4>
+                        <p class='text-parraf'>Este microcontrolador lo usamos para controlar todos los componentes del
+                            proyecto y una de las funcionalidades más importantes es conectarse a internet.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class='carousel-item' data-interval='10000'>
+                    <div class='d-flex flex-column align-items-center'>
+                        <img src='assets/imgSlider/modulorfid.png' class='d-block w-50 mx-auto' alt='Modulo RFID' />
+                        <h4 class='mt-2'>Modulo RFID</h4>
+                        <p class='text-parraf'>Lo usamos para poder detectar una llave de acceso correcta o incorrecta
+                            para abrir la cerradura.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class='carousel-item' data-interval='10000'>
+                    <div class='d-flex flex-column align-items-center'>
+                        <img src='assets/imgSlider/rele.png' class='d-block w-50 mx-auto' alt='Relé' />
+                        <h4 class='mt-2'>Relé</h4>
+                        <p class='text-parraf'>El modulo rele lo usamos para poder enviarle una señal para abrir o
+                            cerrar la cerradura cuando se le asignaba la acción.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de control -->
+            <button class='carousel-control-prev' type='button' data-target='#carouselExampleInterval'
+                data-slide='prev'>
+                <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                <span class='visually-hidden'>Previous</span>
+            </button>
+            <button class='carousel-control-next' type='button' data-target='#carouselExampleInterval'
+                data-slide='next'>
+                <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                <span class='visually-hidden'>Next</span>
+            </button>
+        </div>
+
+        <p class='text-parraf'></p>
+    </div>
+
+
+    <div class='software'>
+        <h3 class='about-is'>Software <i class="bi bi-code-slash"></i></h3>
+        <div class="image-container">
+            <a href='/ruta1' class="image-link" style="background-image: url('assets/imgSoftware/arduinoide.jpg');">
+                <div class="hover-overlay" style="background-color: rgb(0, 174, 232);">
+                    <p>Codigo Arduino</p>
+                </div>
+            </a>
+            <a href='/ruta2' class="image-link" style="background-image: url('assets/imgSoftware/paginaweb.png');">
+                <div class="hover-overlay" style="background-color: rgb(0, 174, 232);">
+                    <p>Pagina WEB</p>
+                </div>
+            </a>
+            <a href='https://github.com/AlanJToledoB/Documentacion-SmartLock' target="_blank" rel="noopener noreferrer"
+                class="image-link" style="background-image: url('assets/imgSoftware/word.png');">
+                <div class="hover-overlay" style="background-color: rgb(0, 174, 232);">
+                    <p>Documentacion</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="img-proyecto" class='software'>
+        <h3 class='about-is'>Imagenes Del Proyecto <i class="bi bi-code-slash"></i></h3>
+        <p class='text-parraf'>
+            Estas son imágenes del proyecto real, con los componentes y el estuche que se usaron <label class='Palabras-claves'>prototipo.</label>
+        </p>
+        <div class="img-muestra">
+            <div class="img-muestra-box1">
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/componentes.png')">
+                    <img class="img-alto" src="assets/imgMuestra/componentes.png" alt="">
+                    <i class="bi bi-zoom-in"></i>
+                </a>
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/CaseCable.png')">
+                    <img class="img-bajo" src="assets/imgMuestra/CaseCable.png" alt="">
+                    <i class="bi bi-zoom-in"></i>
+                </a>
+            </div>
+            <div class="img-muestra-box2">
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/case solo.png')">
+                    <img src="assets/imgMuestra/case solo.png" alt="">
+                    <i class="bi bi-zoom-in"></i>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </div>
+    
+    <script>
+        function openModal(imageSrc) {
+    document.getElementById('myModal').style.display = 'block';
+    document.getElementById('modalImage').src = imageSrc;
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
+    </script>
+
+    <div class='Participantes'>
+        <h2 class='about-is'>Participantes</h2>
+        <div class="contenedores-container">
+            <!-- Contenedor 1 -->
+            <div class="contenedor">
+                <img src='assets/imgParticipantes/alan.jpg' alt='Imagen 1' class='participante-img' />
+                <h2>Toledo Barrientos Alan Joel</h2>
+                <p>Técnico Informático especializado en Software</p>
+                <a href='/alan-portafolio'>
+                    <button>
+                        <span>Portafolio</span>
+                    </button>
+                </a>
+            </div>
+    
+            <!-- Contenedor 2 -->
+            <div class="contenedor">
+                <img src='assets/imgParticipantes/iara.jpg' alt='Imagen 2' class='participante-img' />
+                <h2>Lopez Zaupa Iara Aylen</h2>
+                <p>Técnico Informático especializado en Software</p>
+                <a href='/iara-portafolio'>
+                    <button>
+                        <span>Portafolio</span>
+                    </button>
+                </a>
+            </div>
+    
+            <!-- Contenedor 3 -->
+            <div class="contenedor">
+                <img src='assets/imgParticipantes/francisco.jpg' alt='Imagen 3' class='participante-img' />
+                <h2>Ainiceder Francisco Luciano</h2>
+                <p>Técnico Informático especializado en hardware.</p>
+                <a href='/contenedor3-portafolio'>
+                    <button>
+                        <span>Portafolio</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <h4> <label class='site-subtitle'>Smart</label>Lock</h4>
+        <p>Grupo creado sin fines de lucro, con condiciones de pruebas</p>
+        <div class='container-linkedin'>
+            <!-- LinkedIn de Alan -->
+            <div class='card-linkedin'>
+                <a href='https://www.linkedin.com/in/alan-joel-toledo-barrientos-6a5353263' target='_blank' rel='noopener noreferrer'>
+                    <i class='bi bi-linkedin'></i>
+                </a>
+                <p>Toledo <br /> Alan</p>
+            </div>
+    
+            <!-- LinkedIn de Iara -->
+            <div class='card-linkedin'>
+                <a href='#'>
+                    <i class='bi bi-linkedin'></i>
+                </a>
+                <p>Lopez <br /> Iara</p>
+            </div>
+    
+            <!-- LinkedIn de Francisco -->
+            <div class='card-linkedin'>
+                <a href='#'>
+                    <i class='bi bi-linkedin'></i>
+                </a>
+                <p>Ainiceder <br /> Francisco</p>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
