@@ -21,9 +21,9 @@
   
   }
   
-
-
-
+.Palabras-claves{
+    color:rgb(0, 174, 232);
+}
 
 .fondo-container {
     width: 100%;
@@ -426,5 +426,21 @@ video{
         display: block;
     }
 
-    /* Agrega más estilos para pantallas pequeñas si es necesario */
+    .image-container{
+        display: grid;
+    }
+    .img-muestra{
+        display: block;
+    }
+    video{
+        width: 90%;
+        height: 90%;
+    }
+    .text-container{
+        text-align: center;
+        margin: auto;
+    }
+    .contenedor{
+        margin-top: 20px;
+    }
 }
