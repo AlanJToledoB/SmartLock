@@ -18,7 +18,9 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 bg-body-tertiary rounded">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">SmartLock</a>
+            <a class="navbar-brand me-auto" href="#">SmartLock <img src="assets/favicon.png" alt=""
+                    style="width: 20px; gap: 20px;"></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,17 +72,23 @@
 
         <div class='imagenes-about'>
             <div>
-                <i class="bi bi-bug-fill"></i>
-                <h4>Hardware</h4>
+                <a href="#hardware">
+                    <i class="bi bi-bug-fill"></i>
+                    <h4>Hardware</h4>
+                </a>
                 <p></p>
             </div>
             <div>
-                <i class="bi bi-code-slash"></i>
-                <h4>Software</h4>
+                <a href="#sofware">
+                    <i class="bi bi-code-slash"></i>
+                    <h4>Software</h4>
+                </a>
             </div>
             <div>
-                <i class="bi bi-robot"></i>
-                <h4>Lógica</h4>
+                <a href="#sofware">
+                    <i class="bi bi-robot"></i>
+                    <h4>Lógica</h4>
+                </a>
             </div>
         </div>
         <p class='text-parraf'>Enfoquémonos más en los conceptos que usamos para este proyecto.</p>
@@ -89,7 +97,7 @@
 
     <div class='about'>
         <div class='detalle-about'></div>
-        <h3 class='about-is mt-n1'>
+        <h3 class='about-is mt-n1' id="hardware">
             Hardware <i class='bi bi-bug-fill'></i>
         </h3>
         <p class='text-parraf'>
@@ -147,7 +155,7 @@
     </div>
 
 
-    <div class='software'>
+    <div class='software' id="sofware">
         <h3 class='about-is'>Software <i class="bi bi-code-slash"></i></h3>
         <div class="image-container">
             <a href='/ruta1' class="image-link" style="background-image: url('assets/imgSoftware/arduinoide.jpg');">
@@ -155,7 +163,8 @@
                     <p>Codigo Arduino</p>
                 </div>
             </a>
-            <a href='https://escuelallano.000webhostapp.com/home.php' class="image-link" style="background-image: url('assets/imgSoftware/paginaweb.png');">
+            <a href='https://escuelallano.000webhostapp.com/home.php' class="image-link"
+                style="background-image: url('assets/imgSoftware/paginaweb.png');">
                 <div class="hover-overlay" style="background-color: rgb(0, 174, 232);">
                     <p>Pagina WEB</p>
                 </div>
@@ -172,43 +181,47 @@
     <div id="img-proyecto" class='software'>
         <h3 class='about-is'>Imagenes Del Proyecto <i class="bi bi-code-slash"></i></h3>
         <p class='text-parraf'>
-            Estas son imágenes del proyecto real, con los componentes y el estuche que se usaron <label class='Palabras-claves'>prototipo.</label>
+            Estas son imágenes del proyecto real, con los componentes y el estuche que se usaron <label
+                class='Palabras-claves'>prototipo.</label>
         </p>
         <div class="img-muestra">
             <div class="img-muestra-box1">
-                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/componentes.png')">
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom"
+                    onclick="openModal('assets/imgMuestra/componentes.png')">
                     <img class="img-alto" src="assets/imgMuestra/componentes.png" alt="">
                     <i class="bi bi-zoom-in"></i>
                 </a>
-                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/CaseCable.png')">
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom"
+                    onclick="openModal('assets/imgMuestra/CaseCable.png')">
                     <img class="img-bajo" src="assets/imgMuestra/CaseCable.png" alt="">
                     <i class="bi bi-zoom-in"></i>
                 </a>
             </div>
             <div class="img-muestra-box2">
-                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom" onclick="openModal('assets/imgMuestra/case solo.png')">
+                <a href="#img-proyecto" class="img-zoom" aria-label="Zoom"
+                    onclick="openModal('assets/imgMuestra/case solo.png')">
                     <img src="assets/imgMuestra/case solo.png" alt="">
                     <i class="bi bi-zoom-in"></i>
                 </a>
             </div>
         </div>
-    
+
         <!-- Modal -->
         <div id="myModal" class="modal">
             <span class="close" onclick="closeModal()">&times;</span>
             <img class="modal-content" id="modalImage">
         </div>
     </div>
-    
+
     <script>
         function openModal(imageSrc) {
-    document.getElementById('myModal').style.display = 'block';
-    document.getElementById('modalImage').src = imageSrc;
-}
+            document.getElementById('myModal').style.display = 'block';
+            document.getElementById('modalImage').src = imageSrc;
+        }
 
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
 
     </script>
 
@@ -226,7 +239,7 @@ function closeModal() {
                     </button>
                 </a>
             </div>
-    
+
             <!-- Contenedor 2 -->
             <div class="contenedor">
                 <img src='assets/imgParticipantes/iara.jpg' alt='Imagen 2' class='participante-img' />
@@ -238,7 +251,7 @@ function closeModal() {
                     </button>
                 </a>
             </div>
-    
+
             <!-- Contenedor 3 -->
             <div class="contenedor">
                 <img src='assets/imgParticipantes/francisco.jpg' alt='Imagen 3' class='participante-img' />
@@ -252,41 +265,65 @@ function closeModal() {
             </div>
         </div>
     </div>
-    
+
 
     <footer>
-        <h4> <label class='site-subtitle'>Smart</label>Lock</h4>
-        <p>Grupo creado sin fines de lucro, con condiciones de pruebas</p>
+        <div class="title-logo-footer">
+            <h4> <label class='site-subtitle'>Smart</label>Lock</h4>
+            <img src="assets/favicon.png" alt="">
+        </div>
+
+        <p class="about-is">Grupo creado sin fines de lucro, con condiciones de pruebas</p>
         <div class='container-linkedin'>
             <!-- LinkedIn de Alan -->
             <div class='card-linkedin'>
-                <a href='https://www.linkedin.com/in/alan-joel-toledo-barrientos-6a5353263' target='_blank' rel='noopener noreferrer'>
+                <a href='https://www.linkedin.com/in/alan-joel-toledo-barrientos-6a5353263' target='_blank'
+                    rel='noopener noreferrer'>
                     <i class='bi bi-linkedin'></i>
                 </a>
-                <p>Toledo <br /> Alan</p>
+                <p>Toledo</p>
             </div>
-    
+
+            <div class='card-linkedin'>
+                <a href='#'>
+                    <i class='bi bi-linkedin'></i>
+                </a>
+                <p>Ainiceder</p>
+            </div>
+
             <!-- LinkedIn de Iara -->
             <div class='card-linkedin'>
                 <a href='#'>
                     <i class='bi bi-linkedin'></i>
                 </a>
-                <p>Lopez <br /> Iara</p>
+                <p>Lopez</p>
             </div>
-    
+
             <!-- LinkedIn de Francisco -->
-            <div class='card-linkedin'>
-                <a href='#'>
-                    <i class='bi bi-linkedin'></i>
+
+        </div>
+        <div class="cont-extra-footer">
+            <div>
+                <p class="about-is">repositorio externo</p>
+                <a href="">
+                    <i class="bi bi-github"></i>
                 </a>
-                <p>Ainiceder <br /> Francisco</p>
+            </div>
+            <div>
+                <p class="about-is">album de Imagenes</p>
+                <a href="">
+                    <i class="bi bi-images"></i>
+                </a>
             </div>
         </div>
+
     </footer>
-    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
