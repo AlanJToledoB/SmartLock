@@ -8,6 +8,10 @@
     background-color: rgb(216, 223, 239);
   }
   
+  a{
+    text-decoration: none;
+    color: black;
+  }
   .container-fluid{
     justify-content: space-between;
   }
@@ -379,7 +383,7 @@ button:hover {
 
 footer {
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    height: 250px;
     margin-top: 50px;
     text-align: center;
 }
@@ -394,8 +398,8 @@ footer {
 }
 
 .bi-linkedin{
-    color: rgb(105, 105, 105);
-    font-size: 35px;
+    color: rgba(0, 174, 232, 0.442);
+    font-size: 25px;
     transition: all 0.3s;
     
 }
@@ -407,6 +411,38 @@ footer {
 .card-linkedin p{
     font-weight: 500;
 
+}
+
+.title-logo-footer {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 5px; /* Espaciado entre los elementos hijos */
+  }
+  
+.title-logo-footer img{
+    width: 30px;
+    height: 90%;
+}
+
+.cont-extra-footer{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 100px; /* Espaciado entre los elementos hijos */
+}
+
+.bi-images, .bi-github{
+    font-size: 30px;
+    color: rgba(0, 174, 232, 0.442);
+    transition: all 0.3s;
+}
+
+.bi-github:hover{
+    color: rgb(0, 174, 232);
+}
+.bi-images:hover{
+    color: rgb(0, 174, 232);
 }
 
 video{
